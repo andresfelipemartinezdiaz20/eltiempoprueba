@@ -1,0 +1,390 @@
+header{
+  background: #D6030A;
+  padding: 8px 15px;
+  box-shadow: 0 3px 6px 0 rgba(0,0,0,.2);
+  position: sticky;
+  top: 0;
+  z-index: 99;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+main{
+  margin: 40px auto;
+}
+
+body{
+  background: #F2F2F2;
+}
+
+a{
+  text-decoration: none;
+}
+
+img{
+  width: 100%;
+}
+
+.publicidad {
+  width: 300px;
+  flex: 0 0 300px;
+  margin-left: 20px;
+}
+
+.logo{
+  max-width: 250px;
+  margin: 0 auto;
+}
+
+.container-fluid{
+  margin: 0 auto;
+}
+
+.destacado{
+  padding: 0 10px;
+  margin: 0 0 20px;
+}
+
+.article{
+  background: #fff;
+}
+
+.destacado .article .image{
+  min-height: 362px;
+  overflow-y: hidden;
+  width: 100%;
+  max-width: 100%;
+}
+
+.destacado h2{
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.destacado p{
+  font: 1.0rem/1.43 'Acto',sans serif;
+  color: rgba(0,0,0,.7);
+  margin: 0;
+}
+
+.destacado .tags{
+  font: bold .813rem/1 'Acto',sans serif;
+}
+
+.destacado .article .article-content{
+  width: 260px;
+  min-width: 260px;
+  padding: 15px 20px 20px;
+}
+
+.destacado .article{
+  display: flex;
+}
+
+.main-home .article .image{
+  max-height: 157px;
+  overflow-y: hidden;
+  height: 157px;
+  position: relative;
+  
+}
+
+.main-home .article img{
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+
+.article-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 10px; 
+}
+
+.article-content-list{
+  max-width: 900px;
+}
+
+.main-home{
+  display: flex;
+  max-width: 1220px;
+  margin: 0 auto;
+  
+}
+
+.article-list .article{
+  width: 100%;
+  height: 314px;
+}
+
+.main-home .article-content{
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 15px 35px 20px 20px;
+}
+
+.main-home h2{
+  margin: 0;
+  font-size: 1.0rem;
+  line-height: 1.25;
+  font-weight: bold;
+  margin-bottom: 18px;
+  overflow: hidden;
+  max-height: 60px;
+  text-transform: uppercase;
+}
+
+.create{
+  color: rgba(0,0,0,.6);
+  font: .75rem/1.1 'Acto',sans serif;
+}
+
+h2 a{ 
+  color: black;
+}
+
+h2 a:hover{ 
+  color: #D6030A;
+}
+
+.tags{
+  color: #D6030A;
+  text-transform: uppercase;
+  font: bold .813rem/1 'Acto',sans serif;
+}
+
+.tags:hover{
+  color: #ef1c23;
+}
+
+.block-home-2{
+  margin: 40px auto;
+  display: block;
+}
+
+.block-home-2 .destacado{
+  max-width: 1220px;
+  margin: 0 auto 20px;
+  position: relative;
+}
+
+.block-home-2 .destacado .article{
+  display: block;
+  position: relative;
+}
+
+.block-home-2 .destacado .article .image{
+  width: 100%;
+  min-height: 623px;
+  max-width: 100%;
+  z-index: 1;
+}
+
+.block-home-2 .destacado .article .image .link::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  background: linear-gradient(to bottom,rgba(0,0,0,0) 0,rgba(0,0,0,0) 52%,rgba(0,0,0,1) 100%);
+}
+
+.block-home-2 .destacado .article .article-content{
+  position: absolute;
+  z-index: 2;
+  bottom: 0;
+  width: 100%;
+  padding: 145px 50px 50px;
+  min-width: 100%;
+}
+
+.block-home-2 .destacado .tags:hover,
+.block-home-2 .destacado h2 a:hover,
+.block-home-2 .destacado h2 a,
+.block-home-2 .destacado .tags,
+.block-home-2 .destacado p,
+.block-home-2 .destacado .create{
+  color: #fff;
+}
+
+.block-home-2 .destacado h2 a{
+  font-size: 42px;
+  line-height: 1.11;
+}
+
+.block-home-2 .destacado .tags:hover,
+.block-home-2 .destacado h2 a:hover{
+  text-decoration: underline;
+}
+
+.menu{
+  display: flex;
+  justify-content: center;
+}
+
+.menu ul{
+  white-space: nowrap;
+  display: block;
+  overflow-x: auto;
+  margin: 0;
+  overflow-y: inherit;
+  padding: 0;
+  list-style: none;
+}
+
+.menu ul li{
+  display: inline-block;
+  vertical-align: top;
+}
+
+.menu ul li a{
+  line-height: 60px;
+  font-size: .875rem;
+  color: white;
+  padding: 0 20px;
+  text-transform: uppercase;
+}
+
+@media (max-width: 768px) {
+  .article-list {
+    grid-template-columns: 1fr; 
+  }
+
+  .article-content-list{
+    width: 100%;
+  }
+
+  .main-home{
+    display: block;
+  }
+
+  .publicidad {
+    display: none;
+  }
+
+  .article-list .article{
+    display: flex;
+    height: initial;
+  }
+
+  .main-home .article .image{
+    min-width: 100px;
+    height: 100px;
+    margin: 18px 0 18px 18px;
+  }
+
+  .destacado .article{
+    flex-wrap: wrap;
+  }
+
+  .destacado .article .image{
+    order: 1;
+    padding: 0;
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+  }
+
+  .destacado .article .article-content{
+    order: 2;
+    width: 100%;
+  }
+
+  .block-home-2 .destacado .article .image{
+    min-height: 29rem;
+  }
+}
+
+
+
+.article-internal{
+  background: #fff;
+}
+
+
+.header-article{
+  padding: 0 10px;
+  max-width: 1220px;
+  margin: 0 auto;
+  padding: 30px;
+  text-align: center;
+}
+
+.resumen{
+  margin: 0 auto 20px;
+  max-width: 800px;
+}
+
+.header-article h1{
+  font-size: 56px;
+  line-height: 1.14;
+  margin: 0 auto 20px;
+  max-width: 960px;
+  user-select: none;
+  color: black;
+  text-transform: uppercase;
+}
+
+.header-article .tags{
+  color: #D6030A;
+  font: bold .813rem/1 'Acto',sans serif;
+  text-transform: uppercase;
+  margin-bottom: 9px;
+  display: inline-block;
+}
+
+.header-article .resumen{
+  user-select: none;
+  margin-top: -18px;
+  font: 1.0rem/1.37 'Acto',sans serif;
+  color: rgba(0,0,0,.7);
+  margin: 0 auto 50px;
+  max-width: 800px;
+  position: relative;
+  display: block;
+}
+
+.header-article .resumen:after{
+  position: absolute;
+  left: 0;
+  bottom: -20px;
+  right: 0;
+  margin: 0 auto;
+  content: "";
+  display: block;
+  width: 64px;
+  height: 1px;
+  background: #D6030A;
+}
+
+.header-article small{
+  color: rgba(0,0,0,.6);
+  font: .75rem/1.33 'Acto',sans serif;
+  margin: 20px auto;
+  display: block;
+}
+
+.article-content{
+  display: flex;
+  padding: 0 10px;
+  max-width: 1220px;
+  margin: 0 auto;
+}
+
+.article-content .content{
+  font-size: 1.125rem;
+  line-height: 1.66;
+  margin-bottom: 45px;
+  color: rgba(0,0,0,.9);
+  font: 1.063rem/1.58 'Acto',sans serif;
+}
